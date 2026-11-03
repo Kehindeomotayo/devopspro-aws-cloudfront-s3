@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Standalone DevOpsPro terminal practice lab."/>
+<meta name="theme-color" content="#07111f"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+<title>Practice Lab - DevOpsPro</title>
+<link rel="stylesheet" href="style.css?v=devops-lab-92"/>
+</head>
+<body class="theme-executive terminal-body">
+<main class="terminal-page" id="main">
+  <section class="terminal-stage" aria-labelledby="terminal-title">
+    <div class="exam-bar" aria-label="Exam status">
+      <div class="exam-brand">DevOpsPro Practice Lab</div>
+      <div class="exam-meta">
+        <span id="lab-meta-title">Practice Lab</span>
+        <span id="lab-meta-workflow">Workflow</span>
+        <span id="lab-meta-environment">Environment: Ubuntu</span>
+      </div>
+    </div>
+    <div class="terminal-stage-head">
+      <div>
+        <span class="lab-kicker" id="lab-kicker">Day-To-Day Work Task</span>
+        <h1 id="terminal-title">Practice Lab</h1>
+      </div>
+      <div class="lab-status">
+        <span class="timer" id="lab-timer">00:00</span>
+        <span class="score" id="lab-score">0/0 passed</span>
+      </div>
+    </div>
+
+    <div class="lab-intro card" id="lab-intro">
+      <div>
+        <span class="lab-kicker">Ready Check</span>
+        <h2 id="lab-intro-title">Start Lab.</h2>
+        <p id="lab-intro-copy">The timer begins when you start. Type every command manually.</p>
+      </div>
+      <button class="btn btn-p" id="lab-start" type="button">Start Lab</button>
+    </div>
+
+    <div class="lab-shell terminal-shell lab-hidden" id="git-lab" data-locked="true" data-open-lab="true">
+      <div class="lab-grid">
+        <aside class="lab-brief" aria-label="Lab tasks">
+          <div class="exam-question-head">
+            <span>Work Item</span>
+            <strong id="lab-work-item">DEVOPS-000</strong>
+          </div>
+          <div class="work-guide">
+            <h4 id="phase-guide-title">Work Request Guide</h4>
+            <p id="phase-guide-main"></p>
+            <p id="phase-guide-note"></p>
+          </div>
+          <div class="requirements-pane">
+            <h4>Requirements</h4>
+            <ol class="task-list" id="lab-tasks"></ol>
+            <div class="exam-rules">
+              <strong>Lab Rules</strong>
+              <ul id="lab-rules">
+                <li>Use terminal commands for command tasks.</li>
+                <li>Use the option panel for knowledge checks.</li>
+                <li>Paste is disabled.</li>
+                <li>Command tasks allow two failed attempts.</li>
+                <li>Option questions allow one attempt.</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <div class="terminal-panel" aria-label="Interactive terminal">
+          <div class="terminal-head">
+            <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+            <strong id="terminal-head-user">student@ubuntu:~</strong>
+          </div>
+          <div class="terminal-output" id="terminal-output" aria-live="polite"></div>
+          <form class="terminal-form" id="terminal-form">
+            <label class="prompt" for="terminal-input">student@ubuntu:<span id="terminal-path">~</span>$</label>
+            <input id="terminal-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false"/>
+          </form>
+          <div class="choice-panel lab-hidden" id="choice-panel" aria-live="polite">
+            <div class="choice-exam-head">
+              <span>Knowledge Check</span>
+              <strong>Single choice</strong>
+            </div>
+            <h3 id="choice-title">Select The Best Answer</h3>
+            <p class="choice-question" id="choice-question"></p>
+            <div class="choice-options" id="choice-options"></div>
+            <p class="choice-feedback" id="choice-feedback"></p>
+          </div>
+          <div class="terminal-actions">
+            <button class="btn btn-o btn-sm" id="lab-reset" type="button">Reset Lab</button>
+            <a class="btn btn-o btn-sm" href="labs.html">Briefing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="script.js?v=devops-lab-92" defer></script>
+</body>
+</html>
